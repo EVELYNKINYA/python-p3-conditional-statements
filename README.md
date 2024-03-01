@@ -84,7 +84,7 @@ else:
 
 Notice that the `owner` variable here was not defined above like it would be in
 JavaScript. This is because Python does not require the variable to be declared
-or initialized prior to the conditional. In Python, a variable can be in scope
+or initialized prior to the conditional. In Python, a variable can be in scope 
 for the entire class or function. Therefore, we can use the `owner` variable for
 the rest of the class since it is in **local scope**.
 
@@ -104,7 +104,7 @@ falsy:
 - Empty sets `set()`
 - Empty strings `''` or `""`
 - Zero of any numeric type (`0`, `0.0`)
-- `None`
+- `None` 
 - And, of course, `False`
 
 Using those values in control flow means the condition will be `False`:
@@ -178,15 +178,15 @@ the following code into the Python shell and try to run the `divide()` function
 with different arguments.
 
 ```py
-def divide(num1, num2):
+def divide(2, 4):
     try:
-        quotient = num1 / num2
+        quotient = 2 / 4
         print(quotient)
     except:
         print("An error occurred")
 ```
 
-Did you find any arguments that gave you trouble? The `divide()` function will
+Did you zfind any arguments that gave you trouble? The `divide()` function will
 fail to perform its primary task if `num2` is 0 or either of the numbers is of a
 non-numerical type. Our `try/except` statement allowed our function to run to
 completion, but `"An error occurred"` is not a particularly helpful message.
@@ -195,9 +195,10 @@ Since we know the types of exceptions we might see, let's rewrite our code to be
 a little more descriptive:
 
 ```py
-def divide(num1, num2):
+
+def divide(4, 2):
     try:
-        quotient = num1 / num2
+        quotient = 4 / 2
         print(quotient)
     except ZeroDivisionError:
         print("Error: num2 cannot be equal to 0")
@@ -274,7 +275,7 @@ switch (dog) {
 }
 ```
 
-This `switch/case` statement takes the status of the `dog` as a string and sets
+This `switch/case` statement takes the status of the `dog` as a string and sets  
 the state of the owner accordingly.
 
 Let's take a look at how we might do that with an `if/elif/else` statement in
